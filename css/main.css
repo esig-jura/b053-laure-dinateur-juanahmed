@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: #fdfffc;
+}
+
+.nom {
+    color: blanchedalmond;
+}
+
 body {
     font-family: Verdana,sans-serif;
     font-weight: 400;
@@ -18,11 +26,6 @@ a {
 
 a:hover {
     color: #E8A062;
-}
-
-header {
-    background-color: black;
-
 }
 
 .logo {
