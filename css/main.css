@@ -8,6 +8,7 @@ header {
     padding: 5px 0 0 0;                     /* marge intérieure (haut droite bas gauche) */
     margin: 0 0 30px 0;                     /* marge extérieure (haut droite bas gauche) */
     font-family: Changa one, sans-serif;
+    border-bottom: 10px dotted  #ffffff;    /* ligne en pointillé, dashed: lignes */
 }
 
 .nom {                      /* appelle la classe définie dans le html */
@@ -31,7 +32,10 @@ li {
 }
 
 .accueil {
-    display: none; /* cacher l'élément */
+    display: flex; /* Créer un conteneur de type flexbox, ce qui permet de positionner horizontalement*/
+    justify-content: flex-end; /* Aligner les éléments enfants à droite du conteneur */
+    float: right;
+                    /* cacher les puces d'une li : list-style:none; */
 }
 
 ul {
