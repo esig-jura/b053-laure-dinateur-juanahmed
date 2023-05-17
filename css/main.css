@@ -4,45 +4,60 @@
 
 /******************************** ENTETE ********************************/
 header {
-    display: flex;
-    justify-content: center;
+    text-align: center;                     /* centrer le contenu et texte horizontalement */
     background-color: #000000;              /* couleur de fond*/
     padding: 5px 0 0 0;                     /* marge intérieure (haut droite bas gauche) */
     margin: 0 0 30px 0;                     /* marge extérieure (haut droite bas gauche) */
-    font-family: Changa one, sans-serif;
-    border-bottom: 10px dotted  #ffffff;    /* ligne en pointillé, dashed: lignes */
+    font-family: "Changa one", sans-serif, sans-serif;
 }
 
-.nom {                      /* appelle la classe définie dans le html */
+header .logo {
+
+}
+
+header .nom {                      /* appelle la classe définie dans le html */
+    color: #2ec4b6;
+    font-family: "Changa one", sans-serif;
+    font-weight: 400;
     font-size: 1.75rem;     /* taille du texte */
     line-height: 0.8;       /* hauteur de ligne ou interligne */
     margin: 1rem 0 1rem 0;  /* marge extérieure */
 }
 
-.metier {
+header .metier {
     margin: -5px 0 0 0; /* marge extérieure */
 }
 
-nav {
+header .nav {
     padding: 10px 0 10px 0;
     margin: 20px 0 0 0;
 }
 
-li {
-    display: inline-block; /* cacher les puces */
-    padding: 0;
-}
-
-.accueil {
-    display: flex; /* Créer un conteneur de type flexbox, ce qui permet de positionner horizontalement*/
-    justify-content: flex-end; /* Aligner les éléments enfants à droite du conteneur */
-    float: right;
-    list-style: none; /* cacher les puces d'une li : list-style:none; */
-}
-
-ul {
+header nav ul {
     padding: 0;
     margin: 0 10px 0 10px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+
+header nav ul li:first-child {
+    display: none;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: 800;
+    padding: 15px 10px 15px 10px;
+}
+
+header nav ul li a:hover {
+    color: #2ec4b6;
+    font-weight: 800;
+    padding: 15px 10px 15px 10px;
 }
 
 /******************************** CONTENU PRINCIPAL ********************************/
@@ -53,6 +68,7 @@ body {
     line-height: 1.4;                       /* hauteur de ligne ou interligne */
     font-family: Open Sans, sans-serif;     /* type de police */
     font-weight: 400;                       /* épaisseur de police */
+    margin: 0;
 }
 
 h1 {
