@@ -4,6 +4,8 @@
 
 /******************************** ENTETE ********************************/
 header {
+    display: flex;
+    justify-content: center;
     background-color: #000000;              /* couleur de fond*/
     padding: 5px 0 0 0;                     /* marge intérieure (haut droite bas gauche) */
     margin: 0 0 30px 0;                     /* marge extérieure (haut droite bas gauche) */
@@ -35,7 +37,7 @@ li {
     display: flex; /* Créer un conteneur de type flexbox, ce qui permet de positionner horizontalement*/
     justify-content: flex-end; /* Aligner les éléments enfants à droite du conteneur */
     float: right;
-                    /* cacher les puces d'une li : list-style:none; */
+    list-style: none; /* cacher les puces d'une li : list-style:none; */
 }
 
 ul {
@@ -61,12 +63,13 @@ h1 {
 }
 
 h2 {
+    font-family: Changa one, sans-serif;
     font-size: 1.5rem;
     margin: 0 0 .75em 0;
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.5; /* 1.5 * la taille du texte */
 }
 
 a {
@@ -75,10 +78,6 @@ a {
     font-weight: 800;
     margin: 0 30px 0 30px;
     padding: 15px 10px 15px 10px;
-}
-
-a:hover {
-    color: #2ec4b6; /* changer de couleur lorsque l'élément est survolé */
 }
 
 main {
