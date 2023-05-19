@@ -99,16 +99,25 @@ header nav ul li a:hover {
 
 main {
     margin: 0 5% 0 5%;
-    text-align: center;
 }
 
 main .photo {
     border-radius: 50%;
     width: 50%;
+    text-align: center;
+}
+
+main .presentation {
+    text-align: center;
 }
 
 main p {
     text-align: left;
+}
+
+main section ul li {
+    display: list-item;
+    list-style-image: url('_sources/images/phone.png');
 }
 
 /******************************** PIED DE PAGE ********************************/
