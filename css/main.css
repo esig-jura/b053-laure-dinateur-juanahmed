@@ -99,6 +99,16 @@ header nav ul li a:hover {
 
 main {
     margin: 0 5% 0 5%;
+    text-align: center;
+}
+
+main .photo {
+    border-radius: 50%;
+    width: 50%;
+}
+
+main p {
+    text-align: left;
 }
 
 /******************************** PIED DE PAGE ********************************/
