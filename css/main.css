@@ -121,9 +121,20 @@ main p {
     text-align: left;
 }
 
-main section ul li {
-    display: list-item;
-    list-style-image: url('_sources/images/phone.png');
+/******************************** PAGE CONTACT ********************************/
+
+body.page-contact .contact-info {
+    list-style-type: none;
+    padding: 0;
+}
+
+body.page-contact .contact-info li {
+    margin-bottom: 0.5em;
+}
+
+body.page-contact .contact-info li a {
+    padding: 30px;
+    background-image: url("../_sources/images/phone.png");
 }
 
 /******************************** PIED DE PAGE ********************************/
