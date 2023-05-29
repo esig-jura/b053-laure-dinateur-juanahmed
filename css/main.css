@@ -166,3 +166,29 @@ body.page-informations .portrait {
 .page-informations h1 {
     text-align: center;
 }
+
+/******************************** PAGE INDEX ********************************/
+
+body.page-index h1 {
+    text-align: center;
+}
+
+body.page-index main ul li{
+    display: block;
+    vertical-align: top;
+}
+
+body.page-index main ul li img{
+    display: inline-block;
+    max-width: 45%;
+    margin: 2.5%;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+body.page-index main ul li figure figcaption {
+    padding: 10px;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
