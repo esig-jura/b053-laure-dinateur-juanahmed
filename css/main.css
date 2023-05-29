@@ -34,7 +34,6 @@ p {
 a {
     color: #e71d36;
     text-decoration: none; /* enlever le souligné des liens */
-    font-weight: 800;
 }
 
 /******************************** ENTETE ********************************/
@@ -133,8 +132,23 @@ body.page-contact .contact-info li {
 }
 
 body.page-contact .contact-info li a {
-    padding: 30px;
+    padding-left: 30px;
+    background-image: url("../_sources/images/mail.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 -1px; /* 0 gauche (axe X), 2px en haut (axe Y)  */
+}
+
+body.page-contact .contact-info li a[href^="tel:0741234567"] { /* ^= : lien qui commence par "" */
     background-image: url("../_sources/images/phone.png");
+}
+
+body.page-contact .contact-info li a[href*="twitter"] { /* *= : lien qui contient "" */
+    background-image: url("../_sources/images/twitter.png");
+}
+
+body.page-contact .contact-info li a[href="https://www.facebook.com/laure.dinateur/"] {
+    background-image: url("../_sources/images/facebook.png");
 }
 
 /******************************** PIED DE PAGE ********************************/
