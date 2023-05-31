@@ -168,36 +168,59 @@ body.page-informations .portrait {
 
 /******************************** PAGE INDEX ********************************/
 
-body.page-index h1 {
-    text-align: center;
-}
+.page-index .realisations {
+    display:flex; /* Pour activer la grille */
+    flex-direction: row; /* affichage en colonne */
+    flex-wrap: wrap; /* active le retour à la ligne */
+    gap: 20px;
 
-body.page-index main ul {
-    width: 100%;
+    /* Alignement des éléments */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    /* Supprimer style de base de la lise à puce */
+    padding: 0;
     list-style-type: none;
-    text-align: justify;
-    column-count: 2;
-    column-gap: 5%;
 }
 
-body.page-index main ul li {
-    display: inline-block;
-    max-width: 45%;
-    margin: 2.5%;
-    vertical-align: top;
-    position: relative;
+.page-index .realisations li {
+    flex-basis: calc(50% - 10px); /* taille des éléments */
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+.page-index .realisations li a {
+    color: #011627;
 }
 
-body.page-index main ul li img {
-    width: 100%;
+
+.page-index .realisations li img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-body.page-index main ul li figure figcaption {
-    margin: 10px;
-    font-size: 1rem;
-    overflow: hidden;
+.page-index .realisations li figure {
+    margin: 0;
+    padding: 0;
+    background-color: #e7e9eb;
 }
 
-body.page-index main ul {
-    float: left;
+.page-index .realisations li figcaption {
+    padding: 10px;
 }
+
+@media screen and (min-width: 480px) {
+    .page-index .realisations li {
+        flex-basis: calc(33% - 10px); /* taille des éléments */
+        flex-grow: 2;
+        flex-shrink: 1;
+    }
+} /* Fin min-width */
+
+@media screen and (min-width: 780px) {
+    .page-index .realisations li {
+        flex-basis: calc(25% - 10px); /* taille des éléments */
+        flex-grow: 2;
+        flex-shrink: 1;
+    }
+} /* Fin min-width */
