@@ -119,7 +119,6 @@ footer nav ul li img {
 }
 
 footer nav ul li img:hover {
-    width: 150px;
     filter: grayscale(0);
 }
 
@@ -173,22 +172,32 @@ body.page-index h1 {
     text-align: center;
 }
 
-body.page-index main ul li{
-    display: block;
-    vertical-align: top;
+body.page-index main ul {
+    width: 100%;
+    list-style-type: none;
+    text-align: justify;
+    column-count: 2;
+    column-gap: 5%;
 }
 
-body.page-index main ul li img{
+body.page-index main ul li {
     display: inline-block;
     max-width: 45%;
     margin: 2.5%;
-    box-sizing: border-box;
     vertical-align: top;
+    position: relative;
+}
+
+body.page-index main ul li img {
+    width: 100%;
 }
 
 body.page-index main ul li figure figcaption {
-    padding: 10px;
+    margin: 10px;
     font-size: 1rem;
     overflow: hidden;
 }
 
+body.page-index main ul {
+    float: left;
+}
