@@ -14,6 +14,11 @@ body {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 h1, h2, h3, h4 {
     font-family: Changa one, sans-serif;
     font-weight: 400;
@@ -172,12 +177,11 @@ body.page-informations .portrait {
     display:flex; /* Pour activer la grille */
     flex-direction: row; /* affichage en colonne */
     flex-wrap: wrap; /* active le retour à la ligne */
-    gap: 20px;
 
     /* Alignement des éléments */
     justify-content: center;
-    align-items: center;
-    align-content: center;
+    align-items: stretch;
+    align-content: stretch;
 
     /* Supprimer style de base de la lise à puce */
     padding: 0;
@@ -185,9 +189,10 @@ body.page-informations .portrait {
 }
 
 .page-index .realisations li {
-    flex-basis: calc(50% - 10px); /* taille des éléments */
+    flex-basis: 50%; /* taille des éléments */
     flex-grow: 2;
     flex-shrink: 1;
+    padding: 2rem 2%;
 }
 .page-index .realisations li a {
     color: #011627;
@@ -195,8 +200,7 @@ body.page-informations .portrait {
 
 
 .page-index .realisations li img {
-    max-width: 100%;
-    max-height: 100%;
+
 }
 
 .page-index .realisations li figure {
@@ -208,6 +212,8 @@ body.page-informations .portrait {
 .page-index .realisations li figcaption {
     padding: 10px;
 }
+
+/* A mettre dans responsive.css */
 
 @media screen and (min-width: 480px) {
     .page-index .realisations li {
