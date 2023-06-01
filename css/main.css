@@ -15,8 +15,8 @@ body {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* taille maximum peu importe la taille de l'écran */
+    height: auto; /* calcule automatiquement la hauteur par rapport au contenu */
 }
 
 h1, h2, h3, h4 {
@@ -26,7 +26,7 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 2rem;
-    margin: 0 0 1em 0;
+    margin: 0 0 1em 0; /* marge extérieure */
 }
 
 h2 {
@@ -75,13 +75,13 @@ header nav ul {
 }
 
 header nav ul li {
-    list-style-type: none;
+    list-style-type: none; /* masquer les puces */
     padding: 0;
-    display: inline-block;
+    display: inline-block; /* mettre les puces l'une à côté des autres */
 }
 
 header nav ul li:first-child {
-    display: none;
+    display: none; /* masquer le contenu du premier élément de la liste */
 }
 
 header nav ul li a {
@@ -90,7 +90,7 @@ header nav ul li a {
     padding: 15px 10px 15px 10px;
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover { /* change de couleur lorsqu'on passe par dessus l'élément */
     color: #2ec4b6;
 }
 
@@ -112,15 +112,15 @@ footer nav ul {
 }
 
 footer nav ul li {
-    list-style-type: none;
-    display: inline-block;
+    list-style-type: none; /* masque les puces */
+    display: inline-block; /* mettre le contenu de la liste côte à côte */
 }
 
 footer nav ul li img {
     width: 50px;
     margin: 0 15px 0 15px;
-    filter: grayscale(1);
-    transition: filter 500ms linear;
+    filter: grayscale(1); /* applique un filtre à l'élément */
+    transition: filter 500ms linear; /* applique une vitesse de transition */
 }
 
 footer nav ul li img:hover {
